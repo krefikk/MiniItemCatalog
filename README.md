@@ -1,122 +1,105 @@
 # MiniItemCatalog
 
-React ile geliştirilmiş modern bir ürün kataloğu uygulaması.
+A modern product catalog application built with React.
 
-## Özellikler
+## Features
 
-- 📱 **Responsive Tasarım**: Mobil ve masaüstü uyumlu
-- 🔍 **Arama ve Filtreleme**: Ürün adına göre arama, kategoriye göre filtreleme
-- 📄 **Çok Sayfalı Yapı**: React Router ile sayfa yönlendirmesi
-- 🎨 **Modern UI**: Tailwind CSS ile estetik tasarım
-- ⚡ **API Entegrasyonu**: Fake Store API ile gerçek veri
-- 🌟 **Yıldız Değerlendirme**: Ürün puanları ve yorum sayıları
-- 🔄 **Loading States**: Yükleme animasyonları
-- ❌ **Error Handling**: Hata yönetimi
+- 📱 **Responsive Design**: Mobile and desktop compatible
+- 🔍 **Search and Filtering**: Search by product name, filter by category
+- 📄 **Multi-page Structure**: Page routing with React Router
+- 🎨 **Modern UI**: Aesthetic design with Tailwind CSS
+- ⚡ **API Integration**: Real data with Fake Store API
+- 🌟 **Star Rating**: Product ratings and review counts
+- 🔄 **Loading States**: Loading animations
+- ❌ **Error Handling**: Error management
 
-## Teknolojiler
+## Technologies
 
-- **React 18** - Modern React hooks ve functional components
-- **React Router DOM** - Sayfa yönlendirmesi
+- **React 18** - Modern React hooks and functional components
+- **React Router DOM** - Page routing
 - **Tailwind CSS** - Utility-first CSS framework
-- **Lucide React** - Modern icon kütüphanesi
-- **Fetch API** - HTTP istekleri
+- **Lucide React** - Modern icon library
+- **Fetch API** - HTTP requests
 
-## Kurulum
+## Installation
 
-1. Projeyi klonlayın:
+1. Clone the project:
 ```bash
 git clone https://github.com/krefikk/MiniItemCatalog.git
 cd MiniItemCatalog
 ```
 
-2. Bağımlılıkları yükleyin:
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Geliştirme sunucusunu başlatın:
+3. Start the development server:
 ```bash
 npm start
 ```
 
-4. Tarayıcınızda `http://localhost:3000` adresini açın.
+4. Open `http://localhost:3000` in your browser.
 
-## Proje Yapısı
+## Project Structure
 
 ```
 src/
-├── components/          # Yeniden kullanılabilir bileşenler
-│   ├── Header.js       # Sayfa başlığı
-│   └── ProductCard.js  # Ürün kartı bileşeni
-├── pages/              # Sayfa bileşenleri
-│   ├── ProductList.js  # Ana sayfa - ürün listesi
-│   └── ProductDetail.js # Ürün detay sayfası
-├── services/           # API servisleri
-│   └── api.js         # API çağrıları
-├── App.js             # Ana uygulama bileşeni
-├── index.js           # Uygulama giriş noktası
-└── index.css          # Global stiller
+├── components/          # Reusable components
+│   ├── Header.js       # Page header
+│   └── ProductCard.js  # Product card component
+├── pages/              # Page components
+│   ├── ProductList.js  # Home page - product list
+│   └── ProductDetail.js # Product detail page
+├── services/           # API services
+│   └── api.js         # API calls
+├── App.js             # Main application component
+├── index.js           # Application entry point
+└── index.css          # Global styles
 ```
 
-## API Kullanımı
+## API Usage
 
-Uygulama [Fake Store API](https://fakestoreapi.com/) kullanmaktadır:
+The application uses [Fake Store API](https://fakestoreapi.com/):
 
-- `GET /products` - Tüm ürünleri getir
-- `GET /products/:id` - Belirli ürün detayını getir
-- `GET /products/categories` - Kategorileri getir
+- `GET /products` - Get all products
+- `GET /products/:id` - Get specific product details
+- `GET /products/categories` - Get categories
 
-## Özellikler Detayı
+## Feature Details
 
-### Ana Sayfa (ProductList)
-- Ürünleri grid layout ile gösterim
-- Arama kutusu ile ürün adına göre filtreleme
-- Kategori dropdown'u ile kategori filtreleme
-- Filtreleri temizleme butonu
-- Sonuç sayısı gösterimi
-- Loading ve error state'leri
+### Home Page (ProductList)
+- Display products in grid layout
+- Search box for filtering by product name
+- Category dropdown for category filtering
+- Clear filters button
+- Result count display
+- Loading and error states
 
-### Ürün Detay Sayfası (ProductDetail)
-- Ürün görseli ve bilgileri
-- Fiyat ve kategori bilgisi
-- Yıldız değerlendirme sistemi
-- Ürün açıklaması
-- Breadcrumb navigasyon
-- "Sepete Ekle" ve "Geri Dön" butonları
+### Product Detail Page (ProductDetail)
+- Product image and information
+- Price and category information
+- Star rating system
+- Product description
+- Breadcrumb navigation
+- "Add to Cart" and "Go Back" buttons
 
-### Responsive Tasarım
-- Mobil: 1 sütun
-- Tablet: 2-3 sütun
-- Desktop: 4-5 sütun
-- Detay sayfasında 2 sütunlu layout
-
-## Geliştirme
-
-### Yeni Özellik Ekleme
-1. İlgili bileşeni `src/components/` klasörüne ekleyin
-2. Sayfa bileşenini `src/pages/` klasörüne ekleyin
-3. API servisini `src/services/api.js` dosyasına ekleyin
-4. Route'u `src/App.js` dosyasında tanımlayın
-
-### Stil Değişiklikleri
-- Tailwind CSS utility sınıfları kullanın
-- Özel stiller için `src/index.css` dosyasını düzenleyin
-- `tailwind.config.js` dosyasında tema özelleştirmeleri yapın
+### Responsive Design
+- Mobile: 1 column
+- Tablet: 2-3 columns
+- Desktop: 4-5 columns
+- 2-column layout on detail page
 
 ## Build
 
-Production build için:
+For production build:
 ```bash
 npm run build
 ```
 
 ## Test
 
-Test çalıştırmak için:
+To run tests:
 ```bash
 npm test
 ```
-
-## Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır.
