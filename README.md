@@ -4,14 +4,14 @@ A modern product catalog application built with React.
 
 ## Features
 
-- 📱 **Responsive Design**: Mobile and desktop compatible
-- 🔍 **Search and Filtering**: Search by product name, filter by category
-- 📄 **Multi-page Structure**: Page routing with React Router
-- 🎨 **Modern UI**: Aesthetic design with Tailwind CSS
-- ⚡ **API Integration**: Real data with Fake Store API
-- 🌟 **Star Rating**: Product ratings and review counts
-- 🔄 **Loading States**: Loading animations
-- ❌ **Error Handling**: Error management
+- **Responsive Design**: Mobile and desktop compatible
+- **Search and Filtering**: Search by product name, filter by category
+- **Multi-page Structure**: Page routing with React Router
+- **Modern UI**: Aesthetic design with Tailwind CSS
+- **API Integration**: Real data with Fake Store API
+- **Star Rating**: Product ratings and review counts
+- **Loading States**: Loading animations
+- **Error Handling**: Error management
 
 ## Technologies
 
