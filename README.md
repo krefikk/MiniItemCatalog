@@ -1,4 +1,4 @@
-# Mini Ürün Kataloğu
+# MiniItemCatalog
 
 React ile geliştirilmiş modern bir ürün kataloğu uygulaması.
 
@@ -25,8 +25,8 @@ React ile geliştirilmiş modern bir ürün kataloğu uygulaması.
 
 1. Projeyi klonlayın:
 ```bash
-git clone <repository-url>
-cd staj3_catalog
+git clone https://github.com/krefikk/MiniItemCatalog.git
+cd MiniItemCatalog
 ```
 
 2. Bağımlılıkları yükleyin:
@@ -119,4 +119,4 @@ npm test
 
 ## Lisans
 
-Bu proje MIT lisansı altında lisanslanmıştır. 
+Bu proje MIT lisansı altında lisanslanmıştır.
